@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+
+/* 
+    Navbar Styling 
+*/
+
+.navbar-dark .navbar-brand {
+    color: #1de9b6;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .6);
+    font-size: 19px;
+    font-weight: 500;
+    padding: 0px 30px 0px 0px;
+}
+
+.fixed-top {
+    transition: 500ms ease;
+    background: transparent;
+}
+
+.fixed-top.scrolled {
+    background: whitesmoke;
+}
+
+.fixed-top.scrolled .navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+
+@media all and (max-width: 996px) {
+    #mainNav {
+        /* background-color: white; */
+        color: black;
+    }
+}
+
+
+/* 
+    Header Styling
+*/
+
+.header-heading {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-heading h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.header-heading p {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* 
+    Features Section Styling
+*/
+
+#features {
+    padding: 50px 0px;
+}
+
+.features-main-heading h1 {
+    color: white;
+    font-size: 41px;
+    font-weight: 700;
+}
+
+.features-main-heading p {
+    color: rgb(120, 144, 156) !important;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.features-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.features-icon1 i {
+    color: rgb(29, 233, 182);
+    font-size: 30px;
+    background-color: rgba(29, 233, 182, 0.1);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.features-icon2 i {
+    color: #00e676;
+    font-size: 30px;
+    background-color: rgba(0, 230, 118, 0.1);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.features-icon3 i {
+    color: #ff1744;
+    font-size: 30px;
+    background-color: rgba(255, 23, 68, 0.1);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.features-icon4 i {
+    color: #00e5ff;
+    font-size: 30px;
+    background-color: rgba(0, 229, 255, 0.1);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.features-icons-content h5 {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.features-icons-content p {
+    color: rgb(120, 144, 156) !important;
+}
+
+.feature-heading {
+    color: white;
+    font-weight: 700;
+}
+
+.feature-para {
+    color: white;
+}
+
+.feature-btn {
+    color: #11171a;
+    background-color: #ECEFF1;
+    border-color: #ECEFF1;
+    box-shadow: 0 8px 16px rgb(236 239 241 / 30%);
+    transition: all .2s ease-out;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background-color: #1de9b6 !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #ffffff !important;
+}
+
+
+/* 
+    Pricing section styling
+*/
+
+#pricing {
+    padding: 50px 0px;
+}
+
+.slanted {
+    position: relative;
+    background-color: #11171a !important;
+}
+
+.slanted:before {
+    content: "";
+    background: #11171a;
+    height: 90px;
+    transform: skewY(-2deg);
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+}
+
+.slanted:after {
+    content: "";
+    background: #11171a;
+    height: 90px;
+    transform: skewY(3deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-transform: skewY(3deg);
+    -moz-transform: skewY(3deg);
+    -ms-transform: skewY(3deg);
+    -o-transform: skewY(3deg);
+}
+
+.pricing-section-heading h1 {
+    color: white;
+    font-weight: 700;
+}
+
+.pricing-section-heading p {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.pricing-box {
+    background-color: #263238;
+    border: 0px solid rgba(0, 0, 0, 0.125);
+    border-radius: 6px;
+    height: auto;
+    width: 100%;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.pricing-box-heading h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.pricing-box-content h1 {
+    color: rgb(29, 233, 182);
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.pricing-box-content h6 {
+    color: #78909C !important;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.pricing-box-content p {
+    color: whitesmoke !important;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.pricing-box-content button {
+    color: black;
+    font-weight: 500;
+    background-color: rgb(29, 233, 182);
+    box-shadow: 0 8px 16px rgb(29 233 182 / 30%);
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+}
+
+.pricing-box-content button:hover {
+    background-color: rgb(14, 173, 134);
+}
+
+.pricing-heading h3 {
+    color: white;
+}
+
+.pricing-heading p {
+    font-size: 18px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.sub-headings i {
+    float: left;
+    color: rgb(29, 233, 182);
+    font-size: 15px;
+    padding-top: 7px;
+}
+
+.sub-headings p {
+    font-size: 18px;
+    color: white;
+}
+
+.feature-last-heading h3 {
+    border-top: 1px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+.feature-last-heading p {
+    color: white;
+}
